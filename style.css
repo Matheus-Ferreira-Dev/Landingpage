@@ -94,7 +94,7 @@ nav .nav-logo {
 }
 
  .btn:hover {
-    background-color: var(--text-color);
+    background-color: var(--primary);
     transform: scale(1.1);
     color: var(--header-color);
 }
@@ -194,14 +194,15 @@ nav .nav-logo {
 
 /* Seção 2 */
 .section-2 {
-   max-width: 1130px;
-   width: 100%;
+   width: 1130px;
+   /* width: 100%; */
    margin: 0 auto;
    height: 80vh;
    display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
+   padding-top: 50px;
 }
 
 .about {
@@ -229,8 +230,8 @@ nav .nav-logo {
 .profiles {
 display: flex;
 align-items: center;
-justify-content: space-around;
-gap: 30px;
+justify-content: center;
+gap: 20px;
 width: 50%;
 text-align: center;
 }
@@ -239,16 +240,56 @@ text-align: center;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
+    color: var(--text-color);
 }
-
 
 .profiles p {
 font-size: 22px;
 font-weight: 400;
-
-.profiles .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+color: var(--text-color);
 }
 
+/* seção 3 */
+.section-3 {
+width: 100%;
+max-width: 1120px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 50px;
+}
+
+.section-3 h2 {
+font-size: 36px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 50px;
+    background-color: #fff;
+    /* margin-left: 10px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    text-align: center;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.card i {
+    font-size: 36px;
+}
