@@ -34,13 +34,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    offset: 10;
+    position: fixed;
     box-shadow: 0 0 5px;
+    z-index: 1000;
 }
 
 nav {
-    max-width: 1120px;
+    max-width: 1130px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -81,6 +81,23 @@ nav .nav-logo {
     opacity: .8;
 }
 
+.btn {
+    text-decoration: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    transition: .3s linear;
+}
+
+ .btn:hover {
+    background-color: var(--text-color);
+    transform: scale(1.1);
+    color: var(--header-color);
+}
 /* Seção 1 */
 .container {
     max-width: 1120px;
@@ -99,7 +116,7 @@ nav .nav-logo {
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-    height: 89vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,8 +149,8 @@ nav .nav-logo {
 
 .content .btn {
     text-decoration: none;
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 500;
     display: inline-block;
@@ -143,9 +160,9 @@ nav .nav-logo {
 }
 
 .content .btn:hover {
-    background-color: #000;
+    background-color: var(--text-color);
     transform: scale(1.1);
-    color: #fff;
+    color: var(--header-color);
 }
 
 .section-1 .img-avatar {
@@ -173,4 +190,38 @@ nav .nav-logo {
     50% {
         transform: translateY(-30px)
     }
+}
+
+/* Seção 2 */
+.section-2 {
+   max-width: 1130px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about .img-about {
+    /* flex: 3 1 auto; */
+}
+
+.profiles {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+
+.about .img-about img {
+    width: 350px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.about .img-about img:hover {
+    transform: scale(1.2);
 }
