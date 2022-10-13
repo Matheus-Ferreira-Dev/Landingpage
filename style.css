@@ -26,30 +26,97 @@ body {
 }
 
 /* Cabeçalho */
-header {
-    width: 100%;
-    background-color: var(--header-color);
-    height: 90px;
+header nav span {
     color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    box-shadow: 0 0 5px;
-    z-index: 1000;
+    font-weight: 600;
+    transition: .3s linear;
 }
 
-nav {
-    max-width: 1130px;
+header nav span:hover {
+    color: var(--primary);
+}
+
+header nav .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+header nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav .hamburguer {
+    background-color: var(--text-color);
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+header nav  .hamburguer::before,
+header nav   .hamburguer::after {
+    background-color: var(--text-color);
+    content: "";
+    display: block;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 20px;
-    align-items: center;
-    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
 }
 
-nav .nav-logo {
+header nav  .hamburguer::before {
+    top: -10px;
+}
+
+header nav  .hamburguer::after {
+    bottom: -10px;
+}
+
+header nav  input {
+    display: none;
+}
+
+header nav  input:checked~label .hamburguer {
+transform: rotate(45deg);
+}
+
+header nav input:checked~label .hamburguer::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+header nav input:checked~label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media (max-width: 900px){
+    header .menu {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+}
+
+
+header {
+    grid-area: header;
+    background-color: #fff;
+}
+
+header
+
+
+
+/* nav .nav-logo {
     font-size: 22px;
     font-weight: 500;
     color: var(--text-color);
@@ -79,7 +146,7 @@ nav .nav-logo {
 .nav-item a:hover {
     transform: scale(1.1);
     opacity: .8;
-}
+} */
 
 .btn {
     text-decoration: none;
@@ -376,7 +443,8 @@ nav .nav-logo {
     padding: 5px 20px;
 }
 
-input, textarea {
+input,
+textarea {
     box-shadow: 0 1px 2px #ddd;
     border: none;
     padding: 10px;
@@ -410,7 +478,5 @@ footer {
 
 /* Responsive */
 @media (max-width: px) {
-    header {
-       
-    }
-} 
+    header {}
+}
