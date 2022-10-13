@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -92,45 +93,46 @@
         </section>
         <!-- Projetos -->
         <section id="projects" class="section-4">
+            <h2>Projetos</h2>
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="project-img">
-                            <img src="img/site.png" alt="imagem de um site">
-                        </div>
-                        <div class="projects-info">
-                            <h2>Website moderno</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- slide 2 -->
+              <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="project-img">
-                        <img src="img/shop.png" alt="imagem de um site">
-                    </div>
-                    <div class="projects-info">
-                        <h2>Website moderno</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
+                  <div class="project-img">
+                    <img src="./img/site.png" alt="Foto de um site">
+                  </div>
+                  <div class="project-info">
+                    <h2>WebSites Modernos</h2>
+                    <p>Criação de websites modernos responsivos para qualquer dispositivo.</p>
+                  </div>
                 </div>
-            </div>
-                    <!-- slide 3 -->
-            <div class="swiper-slide">
-                <div class="project-img">
-                    <img src="img/sistema.png" alt="imagem de um site">
+                <div class="swiper-slide">
+                  <div class="project-img">
+                    <img src="./img/shop.png" alt="Foto de uma loja online">
+                  </div>
+                  <div class="project-info">
+                    <h2>E-commerce</h2>
+                    <p>Criação de lojas online de qualquer produto.</p>
+                  </div>
                 </div>
-                <div class="projects-info">
-                    <h2>Website moderno</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="swiper-slide">
+                  <div class="project-img">
+                    <img src="./img/sistema.png" alt="Foto de um sistema">
+                  </div>
+                  <div class="project-info">
+                    <h2>Sistemas completos</h2>
+                    <p>Criação de sistemas completos desde o back-end até o front-end.</p>
+                  </div>
                 </div>
-            </div>
-        </div>
-            </div>
+              </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
