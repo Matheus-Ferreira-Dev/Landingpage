@@ -107,7 +107,7 @@ nav .nav-logo {
     padding: 8px 16px;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .section-1 {
@@ -119,10 +119,9 @@ nav .nav-logo {
     object-fit: cover;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* max-width: 1120px; */
-    justify-content: center;
     width: 100%;
 }
 
@@ -303,4 +302,16 @@ nav .nav-logo {
 
 .card i {
     font-size: 36px;
+}
+
+/* seção 4 projetos */
+.section-4 {
+    height: 100vh;
+    width: 1120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
